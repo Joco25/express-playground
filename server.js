@@ -35,6 +35,14 @@ app.get('/about',(req,res)=>{
 	})
 })
 
+app.get('/projects',(req,res)=>{
+	res.render('projects.hbs',{
+		title:'Projects Page',
+		pageTitle: 'Portfolio Page',
+		welcomeMsg: 'Portfolio page here'
+	})
+})
+
 app.get('/',(req,res)=>{
 	res.render('home.hbs',{
 		title:'Home',
